@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="NonogramAvalonia.MainWindow"
+        Title="Nonogram 10x10"
+        Width="800" Height="800">
+	<StackPanel Margin="10">
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<Button Name="GenerateButton" Content="Nowy nonogram" Margin="5" Padding="10"/>
+			<Button Name="ShowSolutionButton" Content="Pokaż rozwiązanie" Margin="5" Padding="10"/>
+			<Button Name="ExportImageButton" Content="Zapisz jako obraz" Margin="5" Padding="10"/>
+		</StackPanel>
+
+		<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+			<Grid Name="MainGrid" Margin="10">
+				
+			</Grid>
+		</ScrollViewer>
+	</StackPanel>
+</Window>
